@@ -1,0 +1,19 @@
+{
+  "name": "aula01-setup-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand test/",
+    "test:dev": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --watchAll test/",
+    "test:debug": "cross-env NODE_OPTIONS=--experimental-vm-modules node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watchAll test/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^30.0.0"
+  }
+}
